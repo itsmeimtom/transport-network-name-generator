@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 1em;
+
+    background-color: #330000;
+    color: #fff;
+
+    font-family: 'Inter', 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+}
+
+h1#companyName {
+    font-weight: 400;
+}
+
+h1#companyName span.bold {
+    font-weight: 900;
+}
