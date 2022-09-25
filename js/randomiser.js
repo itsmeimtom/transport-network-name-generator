@@ -22,6 +22,8 @@ async function generateName() {
 
     // randomly downcase prefix
     if(Math.round(Math.random()) == 0) pre = pre.toLowerCase();
+    // randomly upcase prefix
+    if(Math.random() > 0.7) pre = pre.toUpperCase();
 
     // pick one side to be bolded 
     if(Math.round(Math.random()) == 0) { 
