@@ -30,7 +30,25 @@ h1#companyName span.circle {
     border-radius: 100%;
 }
 
-p#clickText {
+a, button {
+    background: none;
+    border: none;
+    padding: 0;
+    color: inherit;
+    text-transform: lowercase;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a:hover, button:hover {
+    text-decoration: none;
+}
+
+a:focus, button:focus {
+    border: 2px solid yellow;
+}
+
+p#clickText, p#doesItExist {
     text-transform: lowercase;
     color: #fff;
     opacity: 0.5;
@@ -48,24 +66,6 @@ p#omgItsMe {
     text-align: right;
     text-transform: lowercase;
     user-select: none;
-}
-
-p#omgItsMe a, p#omgItsMe button {
-    background: none;
-    border: none;
-    padding: 0;
-    color: inherit;
-    text-transform: lowercase;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-p#omgItsMe a:hover, p#omgItsMe button:hover {
-    text-decoration: none;
-}
-
-p#omgItsMe a:focus, p#omgItsMe button:focus {
-    border: 2px solid yellow;
 }
 
 @media screen and (min-width: 1200px) {

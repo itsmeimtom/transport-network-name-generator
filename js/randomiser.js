@@ -45,9 +45,9 @@ async function generateName() {
         checkE.innerText = `Checking ${pre}${suf}...`;
         let maybeItExists = await doesItExist(pre+suf);
         if(maybeItExists) {
-            checkE.innerHTML = `${pre}${suf} <a href="https://en.wikipedia.org/wiki/${pre}${suf}">might actually exist</a>!`;
+            checkE.innerHTML = `${pre}${suf} <a href="https://en.wikipedia.org/w/index.php?search=MetroTrans${pre}${suf}">might actually exist</a>!`;
         } else {
-            checkE.innerHTML = `It doesn\'t look like ${pre}${suf} <a href="https://en.wikipedia.org/wiki/${pre}${suf}">exists</a> :(`;
+            checkE.innerHTML = `It doesn\'t look like ${pre}${suf} <a href="https://en.wikipedia.org/w/index.php?search=MetroTrans${pre}${suf}">exists</a> :(`;
         }
     }
 }
