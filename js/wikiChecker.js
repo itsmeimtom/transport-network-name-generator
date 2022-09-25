@@ -1,4 +1,5 @@
 const wikiUrl = 'https://en.wikipedia.org/w/api.php?action=query&origin=*&format=json&generator=search&gsrnamespace=0&gsrlimit=1&gsrsearch=';
+let wikiCheck = false;
 
 async function doesItExist(name) {
     console.info(`Checking Existence: ${name}`);

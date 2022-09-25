@@ -4,7 +4,6 @@ function randFromArray(array) {
 
 let prefixList = prefixes;
 let suffixList = suffixes;
-let wikiCheck = false;
 
 const prefixE = document.getElementById('prefix');
 const suffixE = document.getElementById('suffix');
