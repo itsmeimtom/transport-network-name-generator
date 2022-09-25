@@ -45,8 +45,8 @@ p#omgItsMe {
     position: fixed;
     bottom: 8px;
     right: 16px;
-    text-transform: lowercase;
     text-align: right;
+    text-transform: lowercase;
     user-select: none;
 }
 
@@ -55,6 +55,7 @@ p#omgItsMe a, p#omgItsMe button {
     border: none;
     padding: 0;
     color: inherit;
+    text-transform: lowercase;
     text-decoration: underline;
     cursor: pointer;
 }
@@ -67,9 +68,25 @@ p#omgItsMe a:focus, p#omgItsMe button:focus {
     border: 2px solid yellow;
 }
 
+@media screen and (min-width: 1200px) {
+    .bigOnly {
+        display: inline;
+    }
+    .smallOnly {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     h1#companyName {
         font-size: 9vw;
+    }
+
+    .smallOnly {
+        display: inline;
+    }
+    .bigOnly {
+        display: none;
     }
 }
 
