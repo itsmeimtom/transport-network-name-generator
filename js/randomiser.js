@@ -39,6 +39,12 @@ async function generateName() {
     prefixE.classList.remove('circle');
     if(Math.round(Math.random()) == 0) document.querySelector('h1#companyName span:not(.bold)').classList.add('circle');
 
+    // random colour
+    let r = Math.floor(Math.random()*(5));
+    let g = Math.floor(Math.random()*(5));
+    let b = Math.floor(Math.random()*(5));
+    document.querySelector(':root').style.setProperty('--brand', `#${r}${g}${b}`);
+
     prefixE.innerText = pre;
     suffixE.innerText = suf;
     document.getElementById('companyName').focus();
