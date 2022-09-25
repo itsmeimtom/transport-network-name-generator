@@ -31,6 +31,11 @@ function generateName() {
         suffixE.classList.add('bold');
     }
 
+    // add dumb circle around non-bolded element
+    suffixE.classList.remove('circle');
+    prefixE.classList.remove('circle');
+    if(Math.round(Math.random()) == 0) document.querySelector('h1#companyName span:not(.bold)').classList.add('circle');
+
     prefixE.innerText = pre;
     suffixE.innerText = suf;
     document.getElementById('companyName').focus();

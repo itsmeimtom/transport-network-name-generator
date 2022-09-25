@@ -24,7 +24,7 @@ h1#companyName span.bold {
     font-weight: 900;
 }
 
-h1#companyName span:not(.bold) {
+h1#companyName span.circle {
     background-color: #fff;
     color: #300;
     border-radius: 100%;
