@@ -6,7 +6,9 @@ const prefixes = [
     "City",
     "Citi",
     "County",
-    "Your"
+    "Your",
+    "Integrated",
+    "One"
 ]
 
 const suffixes = [
@@ -21,9 +23,13 @@ const suffixes = [
     "Net",
     "Network",
     "Connection",
+    "Connecta",
+    "Connex",
     "Trains",
     "Trams",
-    "Buses"
+    "Buses",
+    "System",
+    "One"
 ]
 
 const mononyms = [
