@@ -17,16 +17,20 @@
 <body>
     <h1 id="companyName"><span id="prefix">The</span><wbr><span id="suffix" class="bold">Metro</span></h1>
 
+    <p id="doesItExist"></p>
+
     <p id="clickText" aria-hidden="true"><span class="smallOnly">Tap/Click</span><span class="bigOnly">Click</span> anywhere for a new name</p>
     <button id="srButton" class="sr-only">Select here for a new name!</button>
 
     <p id="omgItsMe">
         A thing by <a href="https://tomr.me">tom</a><br>
-        <button id="locationButton"><span class="smallOnly">Tap/Click</span><span class="bigOnly">Click</span> here to allow use of your location in the name</button>
+        <button id="locationButton"><span class="smallOnly">Tap/Click</span><span class="bigOnly">Click</span> here to allow use of your location in the name</button><br>
+        <button id="wikiButton"><span class="smallOnly">Tap/Click</span><span class="bigOnly">Click</span> here to check whether the generated names exist</button>
     </p>
 
     <script src="js/names.js"></script>
     <script src="js/ipLocation.js"></script>
+    <script src="js/wikiChecker.js"></script>
     <script src="js/randomiser.js"></script>
 </body>
 </html>

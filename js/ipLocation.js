@@ -23,11 +23,12 @@ async function addLocationToLists() {
 
 function locationPrompt() {
     console.info('Prompting for Location');
-    let confirmation = confirm('A request will be made to ipinfo.io and your location (city, region or country) will be used when generating the names.');
+    let confirmation = confirm('A request will be made to ipinfo.io and your location (city, region or country) will be used when generating the names.\n\nThis will be remembered until you clear browser data for this site.');
 
     if(confirmation) {
         console.info('Location Allowed');
         addLocationToLists();
+        localStorage.setItem('location', 'allowed');
         document.getElementById('locationButton').style.display = 'none';
     } else {
         console.info('Location Cancelled');
@@ -35,3 +36,8 @@ function locationPrompt() {
 }
 
 document.getElementById('locationButton').onclick = locationPrompt;
+
+if(localStorage.getItem('location' == 'allowed')) {
+    document.getElementById('locationButton').style.display = 'none';
+    addLocationToLists();
+}

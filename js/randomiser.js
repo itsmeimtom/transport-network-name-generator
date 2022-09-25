@@ -4,12 +4,14 @@ function randFromArray(array) {
 
 let prefixList = prefixes;
 let suffixList = suffixes;
+let wikiCheck = false;
 
 const prefixE = document.getElementById('prefix');
 const suffixE = document.getElementById('suffix');
+const checkE = document.getElementById('doesItExist');
 let lastGenerated = 'themetro';
 
-function generateName() {
+async function generateName() {
     let pre = randFromArray(prefixList);
     let suf = randFromArray(suffixList);
 
@@ -39,6 +41,16 @@ function generateName() {
     prefixE.innerText = pre;
     suffixE.innerText = suf;
     document.getElementById('companyName').focus();
+
+    if(wikiCheck) {
+        checkE.innerText = `Checking ${pre}${suf}...`;
+        let maybeItExists = await doesItExist(pre+suf);
+        if(maybeItExists) {
+            checkE.innerHTML = `${pre}${suf} <a href="https://en.wikipedia.org/wiki/${pre}${suf}">might actually exist</a>!`;
+        } else {
+            checkE.innerHTML = `It doesn\'t look like ${pre}${suf} <a href="https://en.wikipedia.org/wiki/${pre}${suf}">exists</a> :(`;
+        }
+    }
 }
 
 document.body.onclick = generateName;
