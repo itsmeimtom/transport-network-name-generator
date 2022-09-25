@@ -12,6 +12,7 @@ const prefixes = [
 const suffixes = [
     "Trans",
     "Transport",
+    "Transit",
     "Met",
     "Metro",
     "Link",
