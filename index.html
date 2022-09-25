@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Transport Network Name Generator</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,10 @@
 <body>
     <h1 id="companyName"><span id="prefix">The</span><wbr><span id="suffix">Metro</span></h1>
 
-    <p id="clickText">Click anywhere for a new name</p>
+    <p id="clickText" aria-hidden="true">Click anywhere for a new name</p>
+    <button id="srButton" class="sr-only">Click here for a new name!</button>
+
+    <p id="omgItsMe">A thing by <a href="https://tomr.me">tom</a></p>
 
     <script src="names.js"></script>
     <script src="randomiser.js"></script>

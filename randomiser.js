@@ -30,6 +30,8 @@ function generateName() {
 
     prefixE.innerText = pre;
     suffixE.innerText = suf;
+    document.getElementById('companyName').focus();
 }
 
 document.body.onclick = generateName;
+document.getElementById('srButton').onclick = generateName;

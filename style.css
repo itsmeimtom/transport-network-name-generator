@@ -31,13 +31,50 @@ p#clickText {
     user-select: none;
 }
 
-body:focus p#clickText {
+body:active p#clickText {
     opacity: 1;
 }
 
+p#omgItsMe {
+    position: fixed;
+    bottom: 8px;
+    right: 16px;
+    text-transform: lowercase;
+    user-select: none;
+}
+
+p#omgItsMe a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+p#omgItsMe a:hover {
+    text-decoration: none;
+}
+
+p#omgItsMe a:focus {
+    border: 2px solid yellow;
+}
 
 @media screen and (max-width: 1200px) {
     h1#companyName {
         font-size: 9vw;
     }
+}
+
+
+/*
+from tailwind
+https://tailwindcss.com/docs/screen-readers
+*/
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
 }
