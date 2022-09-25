@@ -7,13 +7,11 @@ const prefixes = [
     "Citi",
     "County",
     "Your",
-    "Integrated",
     "One"
 ]
 
 const suffixes = [
     "Trans",
-    "Transport",
     "Transit",
     "Met",
     "Metro",
@@ -22,7 +20,6 @@ const suffixes = [
     "Linx",
     "Net",
     "Network",
-    "Connection",
     "Connecta",
     "Connex",
     "Trains",
