@@ -2,16 +2,42 @@ body {
     margin: 0;
     padding: 1em;
 
-    background-color: #330000;
+    background-color: #300;
     color: #fff;
 
     font-family: 'Inter', 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+
+    text-align: center;
+    overflow-x: hidden;
+
+    height: calc(100vh - 2em);
 }
 
 h1#companyName {
     font-weight: 400;
+    font-size: 8vw;
+    padding: 0;
+    user-select: none;
 }
 
 h1#companyName span.bold {
     font-weight: 900;
+}
+
+p#clickText {
+    text-transform: lowercase;
+    color: #fff;
+    opacity: 0.5;
+    user-select: none;
+}
+
+body:focus p#clickText {
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 1200px) {
+    h1#companyName {
+        font-size: 9vw;
+    }
 }

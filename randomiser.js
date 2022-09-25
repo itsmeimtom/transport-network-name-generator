@@ -32,4 +32,4 @@ function generateName() {
     suffixE.innerText = suf;
 }
 
-document.getElementById('helloIAmAButton').onclick = generateName;
+document.body.onclick = generateName;
