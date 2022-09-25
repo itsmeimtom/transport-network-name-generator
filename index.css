@@ -46,19 +46,24 @@ p#omgItsMe {
     bottom: 8px;
     right: 16px;
     text-transform: lowercase;
+    text-align: right;
     user-select: none;
 }
 
-p#omgItsMe a {
+p#omgItsMe a, p#omgItsMe button {
+    background: none;
+    border: none;
+    padding: 0;
     color: inherit;
     text-decoration: underline;
+    cursor: pointer;
 }
 
-p#omgItsMe a:hover {
+p#omgItsMe a:hover, p#omgItsMe button:hover {
     text-decoration: none;
 }
 
-p#omgItsMe a:focus {
+p#omgItsMe a:focus, p#omgItsMe button:focus {
     border: 2px solid yellow;
 }
 
