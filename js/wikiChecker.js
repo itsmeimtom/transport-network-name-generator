@@ -6,7 +6,7 @@ async function doesItExist(name) {
     
 
     if(wikiJson.query) {
-        // console.log(wikiJson.query.pages);
+        console.log(wikiJson.query);
         // if(wikiJson.query.pages.length > 0)
         return true;
     }
@@ -30,7 +30,7 @@ function wikiPrompt() {
 
 document.getElementById('wikiButton').onclick = wikiPrompt;
 
-if(localStorage.getItem('wiki' == 'allowed')) {
+if(localStorage.getItem('wiki') == 'allowed') {
     document.getElementById('wikiButton').style.display = 'none';
     wikiCheck = true;
 }

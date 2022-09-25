@@ -37,7 +37,7 @@ function locationPrompt() {
 
 document.getElementById('locationButton').onclick = locationPrompt;
 
-if(localStorage.getItem('location' == 'allowed')) {
+if(localStorage.getItem('location') == 'allowed') {
     document.getElementById('locationButton').style.display = 'none';
     addLocationToLists();
 }
