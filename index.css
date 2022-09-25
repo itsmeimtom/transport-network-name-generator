@@ -24,6 +24,12 @@ h1#companyName span.bold {
     font-weight: 900;
 }
 
+h1#companyName span:not(.bold) {
+    background-color: #fff;
+    color: #300;
+    border-radius: 100%;
+}
+
 p#clickText {
     text-transform: lowercase;
     color: #fff;

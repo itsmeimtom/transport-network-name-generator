@@ -2,13 +2,16 @@ function randFromArray(array) {
     return array[Math.floor(Math.random() * array.length)];
 }
 
+let prefixList = prefixes;
+let suffixList = suffixes;
+
 const prefixE = document.getElementById('prefix');
 const suffixE = document.getElementById('suffix');
 let lastGenerated = 'themetro';
 
 function generateName() {
-    let pre = randFromArray(prefixes);
-    let suf = randFromArray(suffixes);
+    let pre = randFromArray(prefixList);
+    let suf = randFromArray(suffixList);
 
     // make sure we don't get prefix and suffix the same
     if(pre == suf) return generateName();
