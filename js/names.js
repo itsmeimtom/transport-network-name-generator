@@ -23,6 +23,7 @@ const suffixes = [
     "Connecta",
     "Connex",
     "Trains",
+    "Rail",
     "Trams",
     "Buses",
     "System",
